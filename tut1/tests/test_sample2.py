@@ -10,5 +10,5 @@ def test_invalid_age():
     """this method invalidates the age"""
     with pytest.raises(ValueError) as excinfo:
         valid_age(-1)
-    assert "age can't be less than zero" in str(exc_info.value)
+    assert "age can't be less than zero" in str(excinfo.value)
         
